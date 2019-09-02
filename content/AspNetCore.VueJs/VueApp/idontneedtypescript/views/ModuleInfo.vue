@@ -7,6 +7,27 @@
             <h2 class="subtitle">
                 And that's fine, don't use it.
             </h2>
+            <div class="text-xs-center">
+                <v-badge left>
+                    <template v-slot:badge>
+                        <span>6</span>
+                    </template>
+                    <v-icon large
+                            color="grey lighten-1">
+                        shopping_cart
+                    </v-icon>
+                </v-badge>
+
+                <v-badge color="red">
+                    <template v-slot:badge>
+                        <span>!</span>
+                    </template>
+                    <v-icon large
+                            color="grey">
+                        mail
+                    </v-icon>
+                </v-badge>
+            </div>
 
             <div class="columns">
                 <div class="column">
@@ -18,18 +39,18 @@
 
             <div class="content">
 
-            <p>This template supports both <strong>.ts</strong> and <strong>.js</strong> but if you want to completely opt out of TypeScript do the following</p>
+                <p>This template supports both <strong>.ts</strong> and <strong>.js</strong> but if you want to completely opt out of TypeScript do the following</p>
 
-            <ul>
-                <li>
-                    Rename all <strong>.ts</strong> files to <strong>.js</strong> and remove types from code.
-                </li>
-                <li>
-                    In <strong>webpack.config.js</strong> remove <strong>ts-loader</strong> and remove <strong>".ts"</strong> extension
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        Rename all <strong>.ts</strong> files to <strong>.js</strong> and remove types from code.
+                    </li>
+                    <li>
+                        In <strong>webpack.config.js</strong> remove <strong>ts-loader</strong> and remove <strong>".ts"</strong> extension
+                    </li>
+                </ul>
 
-        </div>
+            </div>
 
         </div>
     </div>

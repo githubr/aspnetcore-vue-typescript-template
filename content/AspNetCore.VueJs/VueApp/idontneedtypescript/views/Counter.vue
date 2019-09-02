@@ -9,6 +9,27 @@
             </h2>
         </div>
         <br>
+        <div class="text-xs-center">
+            <v-badge left>
+                <template v-slot:badge>
+                    <span>6</span>
+                </template>
+                <v-icon large
+                        color="grey lighten-1">
+                    shopping_cart
+                </v-icon>
+            </v-badge>
+
+            <v-badge color="red">
+                <template v-slot:badge>
+                    <span>!</span>
+                </template>
+                <v-icon large
+                        color="grey">
+                    mail
+                </v-icon>
+            </v-badge>
+        </div>
         <div class="container">
             <div class="columns">
                 <div class="column is-6">
@@ -27,11 +48,11 @@
                         <div class="level-right">
                             <div class="level-item">
                                 <a @click.prevent.stop="reset"
-                                   class="button is-white"> Reset </a>
+                                   class="button is-white">Reset</a>
                             </div>
                             <div class="level-item">
                                 <a @click.prevent.stop="addCount"
-                                   class="button is-primary pull-right is-pulled-right is-small shadow"> Increase counter </a>
+                                   class="button is-primary pull-right is-pulled-right is-small shadow">Increase counter</a>
                             </div>
                         </div>
                     </nav>
